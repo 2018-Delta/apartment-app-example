@@ -10,15 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_09_19_224800) do
+ActiveRecord::Schema.define(version: 2018_09_26_221442) do
 
   create_table "apartments", force: :cascade do |t|
     t.string "title"
+    t.string "description"
     t.string "street1"
     t.string "street2"
     t.string "city"
     t.string "state"
     t.string "zipcode"
+    t.string "picture"
     t.string "manager"
     t.string "hours"
     t.string "phone"

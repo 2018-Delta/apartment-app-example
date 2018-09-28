@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
-  resources :apartments
-  devise_for :users, defaults: { format: :json }
+  get '/apartments' => 'apartments#index'
+  devise_for :users, defaults: { format: :json } do
+	  resources :apartments
+  end
 end
